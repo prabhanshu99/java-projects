@@ -61,7 +61,7 @@ public class Tictactoe {
                             turns++;
                             checkWinner();
                             if (!gameOver) {
-                                currentplayer = currentplayer.equals(playerX) ? playerO : playerX;  // Fixed String Assignment
+                                currentplayer = currentplayer.equals(playerX) ? playerO : playerX;  
                                 textlabel.setText(currentplayer + "'s turn");
                             }
                         }
@@ -109,7 +109,7 @@ public class Tictactoe {
             return;
         }
 
-        // Anti-Diagonal Check (Fixed Condition)
+        // Anti-Diagonal Check 
         if (!board[0][2].getText().equals("") &&
             board[0][2].getText().equals(board[1][1].getText()) &&
             board[1][1].getText().equals(board[2][0].getText())) {
